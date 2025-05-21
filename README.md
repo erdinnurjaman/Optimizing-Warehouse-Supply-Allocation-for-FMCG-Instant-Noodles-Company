@@ -1,1 +1,1 @@
-# Optimizing-Warehouse-Supply-Allocation-for-FMCG-Instant-Noodles-Company
+# Optimizing Warehouse Supply Allocation for FMCG Instant Noodles Company
