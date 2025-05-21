@@ -127,7 +127,7 @@ temp_reg_mach:
 ## 7. Exploratory Data Analysis 2 - Insight Building 📈  
 ### A. Product Weight Shipped VS Storage Issue Reported Last 3 Months  
 Warehouses with high shipping volumes tend to experience and report storage issues more frequently. This shows the importance of adaptive capacity management and storage infrastructure for high-performance warehouses.  
-
+![Product Weight Shipped VS Storage Issue Reported Last 3 Months](Assets/chart-1.png)  
 ## 8. Visualization Strategy (Power BI Dashboard) 📊📈  
 ## 9. Insights & Recommendations ✨💡  
 ## 10. Conclusion & Next Step ✅➡️❓  
