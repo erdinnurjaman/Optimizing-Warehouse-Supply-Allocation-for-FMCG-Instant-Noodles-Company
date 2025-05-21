@@ -12,8 +12,8 @@ warehouse characteristics. <br>
 • Provide data-driven recommendations to optimize supply allocation and 
 support managerial decision making through interactive dashboards. <br>
 ## 3. Business Questions & Analysis Method
-1. Zone and Location <br>
-• Q: Which zone or region most often experiences mismatch between warehouse capacity and product weight shipped?
-→ Descriptive + Diagnostic
-• Q: Does the location of the warehouse in a village or city affect the amount of product distribution?
-→ Descriptive + Diagnostic
+### 1. Zone and Location <br>
+• Q: Which zone or region most often experiences mismatch between warehouse capacity and product weight shipped? <br>
+→ Descriptive + Diagnostic <br>
+• Q: Does the location of the warehouse in a village or city affect the amount of product distribution? <br>
+→ Descriptive + Diagnostic <br>
