@@ -65,7 +65,7 @@ supply is still low – why?
 → Prescriptive  
 ## 4. Data Understanding 📊  
 This dataset consists of 25000 rows and 24 columns.  
-
+![df_info](Assets/df_info.png)  
 **Information for each column**
 
 - Ware_house_ID = Product warehouse ID  
@@ -95,11 +95,15 @@ This dataset consists of 25000 rows and 24 columns.
 ## 5. Exploratory Data Analysis 1 - Problem Discovery in Data Sets 📈  
 ### A. Descriptive Statistic  
 - There is no issue with the data type in each column. However, there are several columns that have missing values, namely <mark>**workers_num**</mark>, <mark>**wh_est_year**</mark>, and <mark>**approved_wh_govt_certificate**</mark>. These columns need to be further analyzed for imputation purposes.
+![df_isna](Assets/df_isna.png)  
 - All data from the numeric columns starting from the average, minimum value, median and maximum value have no anomalies or irregularities, everything looks normal. But there are some columns whose minimum and maximum values are always 0 and 1, namely <mark>flood_impacted</mark>, <mark>flood_proof</mark>, <mark>electric_supply</mark>, and <mark>temp_reg_mach</mark>. These columns contain nominal data, namely data that is only used to label or categorize without order. In the data transformation section, we will process and map it to the defined value. In the <mark>Competitor_in_mkt</mark> column, there are several values that have very little data and are not representative for visualization, we can create a segmentation for values that are more than or equal to 9.
 - Put aside the Ware_House_ID and WH_Manager_ID columns because they are identifier or key data for each row. What is interesting is the Location_type column, where from the composition of the column values, the majority of warehouses are located in rural areas. The other columns still look normal.
 ### B. Univariate Analysis
 - After seeing the results of the boxplot and distplot, there are several columns that have outliers, namely transport_issue_l1y, competitor_in_mkt, retail_shop_num and workers_num and the 4 columns have a positive or positively skew distribution. These columns are interesting for us to do a deeper analysis in the next section, namely Bivariate Analysis.
 - As previously stated, the Location Type column is quite interesting because of the disparity in value between Rural and Urban. This column could be something interesting to do further analysis regarding the cause.
+![boxplot](Assets/boxplot.png)
+![distplot](Assets/distplot.png)
+![countplot](Assets/countplot.png)  
 ## 6. Data Cleaning & Transformation 🧹🧼✨  
 ### A. Imputation on Missing Values  
 - Because the missing values ​​in the workers_num column were previously assumed to be because the warehouse was newly established or had not been recorded, but after checking with the warehouse establishment year column, it turned out that the distribution of the missing value data was random, so it will be imputed with the median of the WH_Capacity_Size group.
@@ -128,6 +132,18 @@ temp_reg_mach:
 ### A. Product Weight Shipped VS Storage Issue Reported Last 3 Months  
 Warehouses with high shipping volumes tend to experience and report storage issues more frequently. This shows the importance of adaptive capacity management and storage infrastructure for high-performance warehouses.  
 ![Product Weight Shipped VS Storage Issue Reported Last 3 Months](Assets/chart-1.png)  
+### B. Product Weight Shipped VS Warehouse Breakdown Last 3 Months  
+![Product Weight Shipped VS Warehouse Breakdown Last 3 Months](Assets/chart-2.png)  
+### C. Do warehouses with a history of transportation issues (transport_issue_l1y) have lower shipments?  
+![Chart-3](Assets/chart-3.png)  
+### D. Do warehouses with a certain approved_wh_govt_certificate have higher distribution performance?  
+![Chart-4](Assets/chart-4.png)  
+### E. Do warehouses built longer ago (wh_est_year) tend to have more problems and lower deliveries?  
+![Chart-5](Assets/chart-5.png)  
+![Chart-6](Assets/chart-6.png)  
+![Chart-7](Assets/chart-7.png)  
+### F. Heatmap Correlation  
+![heatmap](Assets/heatmap.png)  
 ## 8. Visualization Strategy (Power BI Dashboard) 📊📈  
 ## 9. Insights & Recommendations ✨💡  
 ## 10. Conclusion & Next Step ✅➡️❓  
