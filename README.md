@@ -92,8 +92,42 @@ This dataset consists of 25000 rows and 24 columns.
 - wh_breakdown_l3m = Number of time warehouse face a breakdown in last 3 months. Like strike from worker, flood, or electrical failure  
 - govt_check_l3m = Number of time government Officers have been visited the warehouse to check the quality and expire of stored food in last 3 months  
 - product_wg_ton = Product has been shipped in last 3 months. Weight is in tons
-## 5. Exploratory Data Analysis 📈  
+## 5. Exploratory Data Analysis 1 - Problem Discovery in Data Sets 📈  
+### A. Descriptive Statistic  
+- There is no issue with the data type in each column. However, there are several columns that have missing values, namely <mark>**workers_num**</mark>, <mark>**wh_est_year**</mark>, and <mark>**approved_wh_govt_certificate**</mark>. These columns need to be further analyzed for imputation purposes.
+- All data from the numeric columns starting from the average, minimum value, median and maximum value have no anomalies or irregularities, everything looks normal. But there are some columns whose minimum and maximum values are always 0 and 1, namely <mark>flood_impacted</mark>, <mark>flood_proof</mark>, <mark>electric_supply</mark>, and <mark>temp_reg_mach</mark>. These columns contain nominal data, namely data that is only used to label or categorize without order. In the data transformation section, we will process and map it to the defined value. In the <mark>Competitor_in_mkt</mark> column, there are several values that have very little data and are not representative for visualization, we can create a segmentation for values that are more than or equal to 9.
+- Put aside the Ware_House_ID and WH_Manager_ID columns because they are identifier or key data for each row. What is interesting is the Location_type column, where from the composition of the column values, the majority of warehouses are located in rural areas. The other columns still look normal.
+### B. Univariate Analysis
+- After seeing the results of the boxplot and distplot, there are several columns that have outliers, namely transport_issue_l1y, competitor_in_mkt, retail_shop_num and workers_num and the 4 columns have a positive or positively skew distribution. These columns are interesting for us to do a deeper analysis in the next section, namely Bivariate Analysis.
+- As previously stated, the Location Type column is quite interesting because of the disparity in value between Rural and Urban. This column could be something interesting to do further analysis regarding the cause.
 ## 6. Data Cleaning & Transformation 🧹🧼✨  
-## 7. Visualization Strategy (Power BI Dashboard) 📊📈  
-## 8. Insights & Recommendations ✨💡  
-## 9. Conclusion & Next Step ✅➡️❓  
+### A. Imputation on Missing Values  
+- Because the missing values ​​in the workers_num column were previously assumed to be because the warehouse was newly established or had not been recorded, but after checking with the warehouse establishment year column, it turned out that the distribution of the missing value data was random, so it will be imputed with the median of the WH_Capacity_Size group.
+- For imputation on the wh_est_year column, it will be done by using the median value of all wh_est_year values ​​in the dataframe because it is normal in terms of distribution. But before that, flagging is done first to mark the rows whose wh_est_year is imputed, if later a more in-depth analysis is needed on warehouses whose year of establishment is empty.
+- For the imputation of the approved_wh_govt_certificate column, an approach will be taken to create a new value, namely "Not Yet Certified" or "Unknown" so that it still appears in the visual.
+### B. Mapping column values  
+For the Competitor_in_mkt column, we create a new segmentation, namely ">= 9" for competitor values greater than or equal to 9 and the value 0 is combined with the value 1 and for value mapping in columns that contain nominal data but have not been defined, here is the mapping:  
+  
+flood_impacted:  
+0: Not Impacted Area  
+1: Impacted Area  
+  
+flood_proof:  
+0: Not Flood Proof  
+1: Flood Proof  
+  
+electric_supply:  
+0: No Backup Power  
+1: Has Backup Power  
+  
+temp_reg_mach:  
+0: No Temperature Regulation  
+1: Has Temperature Regulation  
+
+## 7. Exploratory Data Analysis 2 - Insight Building 📈  
+### A. Product Weight Shipped VS Storage Issue Reported Last 3 Months  
+Warehouses with high shipping volumes tend to experience and report storage issues more frequently. This shows the importance of adaptive capacity management and storage infrastructure for high-performance warehouses.  
+
+## 8. Visualization Strategy (Power BI Dashboard) 📊📈  
+## 9. Insights & Recommendations ✨💡  
+## 10. Conclusion & Next Step ✅➡️❓  
