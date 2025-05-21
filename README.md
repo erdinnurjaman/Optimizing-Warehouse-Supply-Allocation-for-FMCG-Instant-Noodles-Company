@@ -63,6 +63,7 @@ to support high shipments?
 • Q: Zones with ideal conditions (safe from flooding, adequate electricity, smooth distribution) but
 supply is still low – why?  
 → Prescriptive  
+  
 ## 4. Data Understanding 📊  
 This dataset consists of 25000 rows and 24 columns.  
 ![df_info](Assets/df_info.png)  
@@ -92,6 +93,7 @@ This dataset consists of 25000 rows and 24 columns.
 - wh_breakdown_l3m = Number of time warehouse face a breakdown in last 3 months. Like strike from worker, flood, or electrical failure  
 - govt_check_l3m = Number of time government Officers have been visited the warehouse to check the quality and expire of stored food in last 3 months  
 - product_wg_ton = Product has been shipped in last 3 months. Weight is in tons
+  
 ## 5. Exploratory Data Analysis 1 - Problem Discovery in Data Sets 📈  
 ### A. Descriptive Statistic  
 - There is no issue with the data type in each column. However, there are several columns that have missing values, namely <mark>**workers_num**</mark>, <mark>**wh_est_year**</mark>, and <mark>**approved_wh_govt_certificate**</mark>. These columns need to be further analyzed for imputation purposes.
@@ -103,7 +105,8 @@ This dataset consists of 25000 rows and 24 columns.
 - As previously stated, the Location Type column is quite interesting because of the disparity in value between Rural and Urban. This column could be something interesting to do further analysis regarding the cause.
 ![boxplot](Assets/boxplot.png)
 ![distplot](Assets/distplot.png)
-![countplot](Assets/countplot.png)  
+![countplot](Assets/countplot.png)
+  
 ## 6. Data Cleaning & Transformation 🧹🧼✨  
 ### A. Imputation on Missing Values  
 - Because the missing values ​​in the workers_num column were previously assumed to be because the warehouse was newly established or had not been recorded, but after checking with the warehouse establishment year column, it turned out that the distribution of the missing value data was random, so it will be imputed with the median of the WH_Capacity_Size group.
@@ -127,7 +130,7 @@ electric_supply:
 temp_reg_mach:  
 0: No Temperature Regulation  
 1: Has Temperature Regulation  
-
+  
 ## 7. Exploratory Data Analysis 2 - Insight Building 📈  
 ### A. Product Weight Shipped VS Storage Issue Reported Last 3 Months  
 Warehouses with high shipping volumes tend to experience and report storage issues more frequently. This shows the importance of adaptive capacity management and storage infrastructure for high-performance warehouses.  
@@ -144,6 +147,77 @@ Warehouses with high shipping volumes tend to experience and report storage issu
 ![Chart-7](Assets/chart-7.png)  
 ### F. Heatmap Correlation  
 ![heatmap](Assets/heatmap.png)  
+  
 ## 8. Visualization Strategy (Power BI Dashboard) 📊📈  
+1. Header / Summary Cards (Top Section)  
+Use: Card Visuals  
+Metric Description  
+  
+- Total Product Distributed (ton) : Total sum of product_wg_ton || KPI >> (Percentage of Rural and Urban)  
+- Avg Storage Issue (3 Mo) : Mean of storage_issue_l3m || KPI >> (Percentage of warehouses above average value)  
+- Avg Warehouse Breakdown (3 Mo) : Mean of wh_breakdown_l3m || KPI >> (Avg. Warehouse Breakdown by Location Type)  
+- % Certified Warehouses : Percentage of certified warehouses || KPI >> (Target Comparison (Target: 75%))  
+- Avg Warehouse Age : 2025 - wh_est_year (mean) || KPI >> (Percentage of warehouses that are over 20 years old)  
+- Total Transport Issue (1 Yr) : Sum of transport_issue_last_1year || KPI >> (Avg. Transport Issue / Warehouse)  
+  
+  
+2. Operational Risk Section  
+Title: "The Impact of Shipping Volume on Operational Problems"  
+Visual 1: Scatter Plot  
+  
+X: product_wg_ton  
+Y: storage_issue_l3m  
+  
+Visual 2: Scatter Plot / Bubble Chart  
+  
+X: product_wg_ton  
+Y: wh_breakdown_l3m  
+  
+Size: wh_capacity_size  
+Color: location_type  
+  
+  
+3. Certification and its Impact  
+Title: "Does Warehouse Certification Matter?"  
+Visual 3: Bar Chart  
+  
+Axis X: approved_wh_govt_certificate  
+Axis Y: Mean product_wg_ton  
+  
+Visual 4: Stacked Bar Chart  
+  
+Axis X: approved_wh_govt_certificate  
+Axis Y: Count of warehouse  
+Stack by: location_type  
+  
+  
+4. Impact of Warehouse Age  
+Title: "Warehouse Age vs Operational Issues"  
+Visual 5: Line Chart  
+  
+X: wh_est_year  
+Y: Avg storage_issue_l3m  
+  
+Visual 6: Line Chart  
+  
+X: wh_est_year  
+Y: Avg product_wg_ton  
+  
+  
+5. Transportation & Distribution  
+Title: "Distribution vs Transportation Problems"  
+Visual 7: Line or Boxplot  
+  
+X: transport_issue_last_1year  
+Y: product_wg_ton  
+  
+  
+6. Filters / Slicers  
+- Location Type  
+- Warehouse Certification  
+- Year Established (range slider)  
+- Capacity Size  
+- Region / Area
+  
 ## 9. Insights & Recommendations ✨💡  
 ## 10. Conclusion & Next Step ✅➡️❓  
