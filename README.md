@@ -64,6 +64,34 @@ to support high shipments?
 supply is still low – why?  
 → Prescriptive  
 ## 4. Data Understanding 📊  
+This dataset consists of 25000 rows and 24 columns.  
+
+**Information for each column**
+
+- Ware_house_ID = Product warehouse ID  
+- WH_Manager_ID = Employee ID of warehouse manager  
+- Location_type = Location of warehouse like in city or village  
+- WH_capacity_size = Storage capacity size of the warehouse  
+- zone = Zone of the warehouse  
+- WH_regional_zone = Regional zone of the warehouse under each zone  
+- num_refill_req_l3m = Number of times refilling has been done in last 3 months  
+- transport_issue_l1y = Any transport issue like accident or goods stolen reported in last one year  
+- Competitor_in_mkt = Number of instant noodles competitor in the market  
+- retail_shop_num = Number of retails shop who sell the product under the warehouse area  
+- wh_owner_type = Company is owning the warehouse or they have get the warehouse on rent  
+- distributor_num = Number of distributer works in between warehouse and retail shops  
+- flood_impacted = Warehouse is in the Flood impacted area indicator  
+- flood_proof = Warehouse is flood proof indicators. Like storage is at some height not directly on the ground  
+- electric_supply = Warehouse have electric back up like generator, so they can run the warehouse in load shedding  
+- dist_from_hub = Distance between warehouse to the production hub in Kms  
+- workers_num = Number of workers working in the warehouse  
+- wh_est_year = Warehouse established year  
+- storage_issue_reported_l3m = Warehouse reported storage issue to corporate office in last 3 months. Like rat, fungus because of moisture etc.  
+- temp_reg_mach = Warehouse have temperature regulating machine indicator  
+- approved_wh_govt_certificate = What kind of standard certificate has been issued to the warehouse from government regulatory body  
+- wh_breakdown_l3m = Number of time warehouse face a breakdown in last 3 months. Like strike from worker, flood, or electrical failure  
+- govt_check_l3m = Number of time government Officers have been visited the warehouse to check the quality and expire of stored food in last 3 months  
+- product_wg_ton = Product has been shipped in last 3 months. Weight is in tons
 ## 5. Exploratory Data Analysis 📈  
 ## 6. Data Cleaning & Transformation 🧹🧼✨  
 ## 7. Visualization Strategy (Power BI Dashboard) 📊📈  
