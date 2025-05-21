@@ -17,24 +17,24 @@ support managerial decision making through interactive dashboards. <br>
 → Descriptive + Diagnostic  
 • Q: Does the location of the warehouse in a village or city affect the amount of product distribution?  
 → Descriptive + Diagnostic  
-### B. Warehouse Capacity & Utilization  
+### B. Warehouse Capacity & Utilization 🏛️  
 • Q: How optimally is the warehouse utilized (calculated from the ratio of product_wg_ton to 
 WH_capacity_size)?  
 → Prescriptive  
 • Q: Which warehouses are overused (exceeding ideal capacity) or underused?  
 → Diagnostic + Prescriptive  
-### C. Logistics and Transportation  
+### C. Logistics and Transportation 🚚  
 • Q: Do warehouses with a history of transportation issues (transport_issue_l1y) have
 lower shipments?  
 → Diagnostic  
 • Q: How much does dist_from_hub affect the weight of products shipped?  
 → Diagnostic  
-### D. Environment & Infrastructure  
+### D. Environment & Infrastructure  🏢
 • Q: Do flood-impacted or non-flood-proof warehouses tend to have lower shipments?  
 → Diagnostic  
 • Q: Is the presence of electric_supply or temp_reg_mach related to warehouse performance in product distribution?  
 → Diagnostic  
-### E. Warehouse Activity  
+### E. Warehouse Activity 🏪  
 • Q: Do warehouses that experience frequent refills (num_refill_req_l3m) also receive 
 greater supplies?  
 → Descriptive + Diagnostic  
@@ -43,23 +43,29 @@ of products to the area?
 → Diagnostic  
 • Q: How much influence does wh_breakdown_l3m have on the decline in supplies to the warehouse?  
 → Diagnostic  
-### F. Market Competition  
+### F. Market Competition 🛒  
 • Q: Does the number of competitors (Competitor_in_mkt) affect the number of products shipped to an area?  
 → Diagnostic  
 • Q: Which areas have market potential (few competitors, many retailers) but supply is still low?  
 → Prescriptive (opportunity mapping)  
-### G. Certification and Compliance  
+### G. Certification and Compliance 📜  
 • Q: Do warehouses with a certain approved_wh_govt_certificate have higher distribution performance?  
 → Descriptive  
 • Q: Does the number of government inspection visits (govt_check_l3m) affect the supply to that warehouse?  
 → Diagnostic  
-### H. Warehouse Eligibility & Age  
+### H. Warehouse Eligibility & Age 📆  
 • Q: Do warehouses built longer (wh_est_year) tend to have more problems and lower deliveries?  
 → Diagnostic  
-### I. Combination of Factors  
+### I. Combination of Factors 🕵  
 • Q: What combination of factors (location, capacity, number of distributors, transportation) is most ideal
 to support high shipments?  
 → Multivariate Diagnostic  
 • Q: Zones with ideal conditions (safe from flooding, adequate electricity, smooth distribution) but
 supply is still low – why?  
 → Prescriptive  
+## 4. Data Understanding 📊  
+## 5. Exploratory Data Analysis 📈  
+## 6. Data Cleaning & Transformation 🧹🧼✨  
+## 7. Visualization Strategy (Power BI Dashboard) 📊📈  
+## 8. Insights & Recommendations ✨💡  
+## 9. Conclusion & Next Step ✅➡️❓  
