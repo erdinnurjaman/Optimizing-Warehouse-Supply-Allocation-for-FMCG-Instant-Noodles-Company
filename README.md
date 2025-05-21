@@ -5,9 +5,9 @@ FMCG companies that have only been in the instant noodle business for two years 
 Therefore, management wants to understand more deeply the demand patterns and warehouse conditions in 
 various regions in order to optimize product distribution.
 ## 2. Project Objective
-Perform historical data analysis to: 
+Perform historical data analysis to: <br>
 • Identify product demand patterns by region, location type, and 
-warehouse characteristics. 
-• Diagnose factors causing demand and supply mismatch. 
+warehouse characteristics. <br>
+• Diagnose factors causing demand and supply mismatch. <br>
 • Provide data-driven recommendations to optimize supply allocation and 
-support managerial decision making through interactive dashboards.
+support managerial decision making through interactive dashboards. <br>
