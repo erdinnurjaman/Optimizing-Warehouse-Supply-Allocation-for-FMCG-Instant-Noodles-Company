@@ -221,77 +221,77 @@ Y: product_wg_ton
   
 ## 9. Insights & Recommendations ✨💡  
 ### CARD:
-🔷 1. Total Product Distributed: 553M
+#### 🔷 1. Total Product Distributed: 553M
 Rural: 92% | Urban: 8%
 
 📊 Insight:
-The majority of product distribution occurs in rural areas (92%), indicating a high dependence on the rural distribution network.
+- The majority of product distribution occurs in rural areas (92%), indicating a high dependence on the rural distribution network.
 
 ✅ Recommendation:
 
-Evaluate distribution efficiency in rural areas, as they may be more prone to logistical challenges.
+- Evaluate distribution efficiency in rural areas, as they may be more prone to logistical challenges.
 
-Optimize urban infrastructure to increase distribution in high-growth potential areas.
+- Optimize urban infrastructure to increase distribution in high-growth potential areas.
 
-🔷 2. Avg. Storage Issue (3 Mo): 17.13
+#### 🔷 2. Avg. Storage Issue (3 Mo): 17.13
 50% Warehouses Above Avg.
 
 📊 Insight:
-Storage issues are relatively high, with half of the warehouses experiencing issues above the average.
+- Storage issues are relatively high, with half of the warehouses experiencing issues above the average.
 
 ✅ Recommendation:
 
-Conduct audits to identify warehouses with high storage issues.
+- Conduct audits to identify warehouses with high storage issues.
 
-Improve SOPs for storage handling and schedule regular maintenance.
+- Improve SOPs for storage handling and schedule regular maintenance.
 
-🔷 3. Avg. Warehouse Breakdown (3 Mo): 3.48
+#### 🔷 3. Avg. Warehouse Breakdown (3 Mo): 3.48
 Rural: 3.46 | Urban: 3.75
 
 📊 Insight:
-Urban warehouses show a slightly higher frequency of breakdowns compared to rural ones.
+- Urban warehouses show a slightly higher frequency of breakdowns compared to rural ones.
 
 ✅ Recommendation:
 
-Conduct more frequent inspections in urban warehouses.
+- Conduct more frequent inspections in urban warehouses.
 
-Assess if operational loads in urban warehouses are too high, causing faster breakdowns.
+- Assess if operational loads in urban warehouses are too high, causing faster breakdowns.
 
-🔷 4. Avg. Warehouse Age: 15.80 Years
+#### 🔷 4. Avg. Warehouse Age: 15.80 Years
 18% Warehouses > 20 Years
 
 📊 Insight:
-Warehouses are relatively old, with nearly 1 in 5 being over 20 years old—posing operational risks (see storage issues).
+- Warehouses are relatively old, with nearly 1 in 5 being over 20 years old—posing operational risks (see storage issues).
 
 ✅ Recommendation:
 
-Consider modernizing or relocating warehouses over 20 years old.
+- Consider modernizing or relocating warehouses over 20 years old.
 
-Explore building new warehouses with modern storage technology.
+- Explore building new warehouses with modern storage technology.
 
-🔷 5. Total Transport Issue (1 Yr): 19K
+#### 🔷 5. Total Transport Issue (1 Yr): 19K
 Avg. 0.77 per Warehouse
 
 📊 Insight:
-Transport issues are still significant, with nearly one issue per warehouse annually.
+- Transport issues are still significant, with nearly one issue per warehouse annually.
 
 ✅ Recommendation:
 
-Audit distribution routes and transport vendors.
+- Audit distribution routes and transport vendors.
 
-Add buffer time, training, or logistic backups for risk-prone areas.
+- Add buffer time, training, or logistic backups for risk-prone areas.
 
-🔷 6. % Certified Warehouses: 96%
+#### 🔷 6. % Certified Warehouses: 96%
 +21% vs Target (75%)
 
 📊 Insight:
-The percentage of certified warehouses has exceeded the target significantly, which is very positive.
+- The percentage of certified warehouses has exceeded the target significantly, which is very positive.
 
 ✅ Recommendation:
 
-Leverage this as a competitive advantage (useful for branding/logistics partnerships).
+- Leverage this as a competitive advantage (useful for branding/logistics partnerships).
 
-Shift focus to next-level performance metrics such as efficiency or distribution speed.
+- Shift focus to next-level performance metrics such as efficiency or distribution speed.
 
 ### CHART:
 📊 Insight:
