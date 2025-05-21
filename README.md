@@ -220,4 +220,120 @@ Y: product_wg_ton
 - Region / Area
   
 ## 9. Insights & Recommendations ✨💡  
+### CARD:
+🔷 1. Total Product Distributed: 553M
+Rural: 92% | Urban: 8%
+
+📊 Insight:
+The majority of product distribution occurs in rural areas (92%), indicating a high dependence on the rural distribution network.
+
+✅ Recommendation:
+
+Evaluate distribution efficiency in rural areas, as they may be more prone to logistical challenges.
+
+Optimize urban infrastructure to increase distribution in high-growth potential areas.
+
+🔷 2. Avg. Storage Issue (3 Mo): 17.13
+50% Warehouses Above Avg.
+
+📊 Insight:
+Storage issues are relatively high, with half of the warehouses experiencing issues above the average.
+
+✅ Recommendation:
+
+Conduct audits to identify warehouses with high storage issues.
+
+Improve SOPs for storage handling and schedule regular maintenance.
+
+🔷 3. Avg. Warehouse Breakdown (3 Mo): 3.48
+Rural: 3.46 | Urban: 3.75
+
+📊 Insight:
+Urban warehouses show a slightly higher frequency of breakdowns compared to rural ones.
+
+✅ Recommendation:
+
+Conduct more frequent inspections in urban warehouses.
+
+Assess if operational loads in urban warehouses are too high, causing faster breakdowns.
+
+🔷 4. Avg. Warehouse Age: 15.80 Years
+18% Warehouses > 20 Years
+
+📊 Insight:
+Warehouses are relatively old, with nearly 1 in 5 being over 20 years old—posing operational risks (see storage issues).
+
+✅ Recommendation:
+
+Consider modernizing or relocating warehouses over 20 years old.
+
+Explore building new warehouses with modern storage technology.
+
+🔷 5. Total Transport Issue (1 Yr): 19K
+Avg. 0.77 per Warehouse
+
+📊 Insight:
+Transport issues are still significant, with nearly one issue per warehouse annually.
+
+✅ Recommendation:
+
+Audit distribution routes and transport vendors.
+
+Add buffer time, training, or logistic backups for risk-prone areas.
+
+🔷 6. % Certified Warehouses: 96%
++21% vs Target (75%)
+
+📊 Insight:
+The percentage of certified warehouses has exceeded the target significantly, which is very positive.
+
+✅ Recommendation:
+
+Leverage this as a competitive advantage (useful for branding/logistics partnerships).
+
+Shift focus to next-level performance metrics such as efficiency or distribution speed.
+
+### CHART:
+📊 Insight:
+Even though warehouse breakdowns are increasing, shipping volume remains high. Urban areas tend to be more frequently involved in breakdowns with higher shipment volumes.
+
+💡 Business Recommendation:
+Conduct more frequent operational audits in urban areas with high breakdowns to prevent long-term logistic inefficiencies.
+
+📊 Insight:
+The more storage issues reported, the higher the shipping volume. This suggests that warehouses with large capacities tend to experience more storage problems.
+
+💡 Business Recommendation:
+Invest in inventory management and smart storage systems in large warehouses to reduce issue potential.
+
+📊 Insight:
+Warehouses with official certification (C to A+) contribute significantly higher shipping volumes compared to uncertified ones.
+
+💡 Business Recommendation:
+Encourage warehouse certification to increase trust in handling large volumes. Uncertified warehouses should be evaluated and prioritized for standard improvements.
+
+📊 Insight:
+Most certified warehouses are located in rural areas, while uncertified ones are also only found in rural regions. Certification is not evenly distributed to urban areas.
+
+💡 Business Recommendation:
+Expand the certification program to urban areas.
+Review whether uncertified rural warehouses have high capacity, as they may pose a risk in the supply chain.
+
+📊 Insight:
+Newer warehouses (built after 2010) report fewer storage issues than older ones.
+
+💡 Business Recommendation:
+Focus on renovating or upgrading infrastructure in warehouses built before 2010. Alternatively, direct more distribution to newer warehouses to minimize storage issues.
+
+📊 Insight:
+The average shipping volume is lower in newer warehouses, indicating that older warehouses still dominate in handling large volumes, despite having more issues.
+
+💡 Business Recommendation:
+Redistribute shipping loads to newer and more efficient warehouses to avoid overburdening older ones. Build the operational capacity of newer warehouses to take over distribution loads.
+
+📊 Insight:
+The more transport issues encountered, the lower the shipping volume. Warehouses or routes with fewer transport problems dominate in shipping volume.
+
+💡 Business Recommendation:
+Evaluate and optimize areas or routes with many transport issues. Improvements may involve better road infrastructure, transportation modes, or changing logistics vendors.
 ## 10. Conclusion & Next Step ✅➡️❓  
