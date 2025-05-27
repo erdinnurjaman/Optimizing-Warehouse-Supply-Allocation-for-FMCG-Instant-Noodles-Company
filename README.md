@@ -1,5 +1,5 @@
 # Optimizing Warehouse Supply Allocation for FMCG Instant Noodles Company 🍜  
-![full_project](Assets/full_project.png) 
+![full_project](Assets/full_project.jpg) 
 This project analyzes the mismatch between demand and supply in FMCG warehouses using a combination of Python and Power BI. The analysis is done using descriptive, diagnostic, and prescriptive analytics approaches to optimize product distribution and warehouse efficiency. The results are visualized in an interactive dashboard as a management decision-making tool.  
 Link to Dashboard: https://erdinnurjaman.github.io/supply_chain.html
 ## 1. Background Information 📋
